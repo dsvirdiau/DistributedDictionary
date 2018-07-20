@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/skypeBlue"
+    tools:context=".MainActivity" >
+
+    
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAns"
+        android:textColor="@color/White"
+        android:background="@drawable/background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/etAns"
+        android:layout_marginBottom="22dp"
+        android:textSize="28sp"
+        android:text="Meaning" />
+
+    <EditText
+        android:id="@+id/etAns"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_above="@+id/btnSend"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etSend"
+        android:background="@drawable/background_text"
+        android:clickable="false"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:focusable="false"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etSend"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/etAns"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/background_text"
+        android:ems="10"
+        android:textSize="25sp"
+        android:paddingLeft="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etSend"
+        android:layout_alignBottom="@+id/etSend"
+        android:layout_alignLeft="@+id/etAns"
+        android:text="Enter Word : "
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+</RelativeLayout>
